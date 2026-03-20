@@ -3,53 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <title>Honey14 | Portfolio</title>
+    <meta name="description" content="A polished portfolio for Honey14 featuring curated projects, execution highlights, and 0-to-1 / 0-to-scale impact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate developer specializing in web applications. I love creating user-friendly and functional designs.</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <article>
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </article>
-        <article>
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </article>
-        <article>
-            <h3>Project 3</h3>
-            <p>Description of project 3.</p>
-        </article>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2026 Honey14-official. All rights reserved.</p>
-    </footer>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="#hero">Honey14</a>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#impact">Impact</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="hero">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">Product-minded builder • Developer • Operator</span>
+                    <h1>Designing beautiful digital products and taking ideas from <span>0 → 1</span>, then scaling them with clarity.</h1>
+                    <p>
+                        I build thoughtful experiences that blend clean UI, product strategy, and execution. From launching early-stage concepts to improving systems at scale, I focus on work that moves metrics and feels premium.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#projects">View Projects</a>
+                        <a class="button secondary" href="#contact">Let's Work Together</a>
+                    </div>
+                    <div class="hero-stats">
+                        <article class="stat-card glass-card">
+                            <strong>8+</strong>
+                            <span>Products & experiments shipped</span>
+                        </article>
+                        <article class="stat-card glass-card">
+                            <strong>0 → 1</strong>
+                            <span>Idea validation, MVP design, and launch execution</span>
+                        </article>
+                        <article class="stat-card glass-card">
+                            <strong>0 → Scale</strong>
+                            <span>Growth loops, UX refinements, and performance improvements</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="hero-panel glass-card reveal delay-1">
+                    <div class="panel-badge">Currently focused on</div>
+                    <h2>Building standout products with strong visual systems.</h2>
+                    <ul class="focus-list">
+                        <li>Curated portfolio storytelling</li>
+                        <li>Modern, card-driven interfaces</li>
+                        <li>Execution from strategy to shipped product</li>
+                    </ul>
+                    <div class="availability-row">
+                        <span class="availability-dot"></span>
+                        Available for freelance, product, and creative collaborations
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section reveal" id="about">
+                <div class="section-heading">
+                    <span class="eyebrow">About me</span>
+                    <h2>I turn ambition into polished product experiences.</h2>
+                </div>
+                <div class="about-grid">
+                    <article class="info-card glass-card">
+                        <h3>Builder mindset</h3>
+                        <p>I enjoy working where product thinking, technology, and execution overlap. I love defining a sharp vision, turning it into a usable experience, and refining it with feedback.</p>
+                    </article>
+                    <article class="info-card glass-card">
+                        <h3>Beautiful by default</h3>
+                        <p>My approach to UI is simple: premium typography, intentional spacing, and components that make content feel clear, modern, and high-signal.</p>
+                    </article>
+                    <article class="info-card glass-card">
+                        <h3>Outcome oriented</h3>
+                        <p>I care about more than shipping. I think about adoption, retention, velocity, and how each project contributes to a bigger business or creator journey.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section reveal" id="impact">
+                <div class="section-heading">
+                    <span class="eyebrow">0 → 1 / 0 → Scale</span>
+                    <h2>What I’ve done across the product lifecycle.</h2>
+                </div>
+                <div class="impact-grid">
+                    <article class="impact-card glass-card">
+                        <div class="impact-label">0 → 1</div>
+                        <h3>Concept to launch</h3>
+                        <p>Translating raw ideas into clear prototypes, MVPs, landing pages, and first user experiences that are ready to test in the real world.</p>
+                        <ul>
+                            <li>Positioned new products with sharp messaging</li>
+                            <li>Created first versions of design systems and content structure</li>
+                            <li>Built launch-ready interfaces with strong first impressions</li>
+                        </ul>
+                    </article>
+                    <article class="impact-card glass-card">
+                        <div class="impact-label">0 → Scale</div>
+                        <h3>Growth and refinement</h3>
+                        <p>Improving what already works by tightening UX, clarifying conversion paths, and creating scalable patterns that support future features.</p>
+                        <ul>
+                            <li>Improved usability through cleaner visual hierarchy</li>
+                            <li>Introduced reusable card-based layouts and system thinking</li>
+                            <li>Focused on faster iteration and more consistent experiences</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section reveal" id="projects">
+                <div class="section-heading">
+                    <span class="eyebrow">Featured work</span>
+                    <h2>Curated project cards that showcase strategy, craft, and execution.</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card glass-card featured">
+                        <div class="project-topline">
+                            <span class="project-tag">Portfolio Experience</span>
+                            <span class="project-stage">UI Refresh</span>
+                        </div>
+                        <h3>Premium personal portfolio</h3>
+                        <p>A visually rich, single-page portfolio experience that presents personal branding, featured work, and proof of execution through elegant storytelling blocks.</p>
+                        <div class="project-metrics">
+                            <span>Modern aesthetic</span>
+                            <span>Card-first layout</span>
+                            <span>Responsive design</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="project-topline">
+                            <span class="project-tag">Product Launch</span>
+                            <span class="project-stage">0 → 1</span>
+                        </div>
+                        <h3>MVP concept buildout</h3>
+                        <p>Defined the product story, structured the first user journey, and built a launch-ready interface to validate demand quickly.</p>
+                        <div class="project-metrics">
+                            <span>Positioning</span>
+                            <span>Prototype</span>
+                            <span>Launch-ready</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="project-topline">
+                            <span class="project-tag">Operations + Product</span>
+                            <span class="project-stage">0 → Scale</span>
+                        </div>
+                        <h3>Experience optimization system</h3>
+                        <p>Reworked page structure and component consistency to make content easier to scan, more persuasive, and more scalable for future updates.</p>
+                        <div class="project-metrics">
+                            <span>Scannability</span>
+                            <span>Consistency</span>
+                            <span>Maintainability</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="project-topline">
+                            <span class="project-tag">Creative Direction</span>
+                            <span class="project-stage">Brand + UI</span>
+                        </div>
+                        <h3>Visual identity systems</h3>
+                        <p>Crafted cohesive visual language through typography, spacing, and interface patterns to make products feel distinctive and trustworthy.</p>
+                        <div class="project-metrics">
+                            <span>Visual system</span>
+                            <span>Trust</span>
+                            <span>Differentiation</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section reveal" id="contact">
+                <div class="contact-card glass-card">
+                    <div>
+                        <span class="eyebrow">Contact</span>
+                        <h2>Want to build something sharp and memorable?</h2>
+                        <p>I'm open to collaborations where thoughtful design, product execution, and elegant front-end craft matter.</p>
+                    </div>
+                    <a class="button primary" href="mailto:hello@honey14.dev">hello@honey14.dev</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

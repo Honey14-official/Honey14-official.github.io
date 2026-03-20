@@ -1,17 +1,15 @@
-// script.js
+const revealElements = document.querySelectorAll('.reveal');
 
-// Function to display current date and time
-function displayDateTime() {
-    const now = new Date();
-    const utcDateTime = now.toISOString().replace('T', ' ').split('.')[0];
-    document.getElementById('date-time').innerText = utcDateTime;
-}
+const revealOnScroll = () => {
+    revealElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const isVisible = elementTop < window.innerHeight - 80;
 
-// Function to initialize interactive features
-function initInteractiveFeatures() {
-    displayDateTime();
-    setInterval(displayDateTime, 1000); // Update every second
-}
+        if (isVisible) {
+            element.classList.add('visible');
+        }
+    });
+};
 
-// Execute the initialization on window load
-window.onload = initInteractiveFeatures;
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
