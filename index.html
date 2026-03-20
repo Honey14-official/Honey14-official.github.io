@@ -3,53 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <title>Honey14 | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
+    <main class="hero-shell">
+        <section class="hero-panel">
+            <div class="brand-mark" aria-label="Honey14 logo">H14</div>
+
+            <div class="hero-copy">
+                <p class="eyebrow">Hi, I am</p>
+                <h1>Honey14</h1>
+                <p class="role">Front-end Developer / UI Designer</p>
+                <p class="intro">
+                    I build clean, modern websites with bold layouts, smooth experiences,
+                    and a strong visual identity.
+                </p>
+
+                <div class="social-links" aria-label="Social links">
+                    <a href="mailto:hello@honey14.dev" aria-label="Email">@</a>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="visual-panel">
+            <header class="topbar">
+                <nav>
+                    <a href="#about">About me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                </nav>
+                <a class="contact-btn" href="#contact">Contact Me</a>
+            </header>
+
+            <div class="portrait-wrap">
+                <div class="glow"></div>
+                <div class="portrait-card">
+                    <div class="portrait-avatar" aria-hidden="true">H</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="content-strip" id="about">
+        <article>
+            <p class="section-label">About me</p>
+            <h2>Modern personal website with a premium portfolio look.</h2>
+            <p>
+                This layout is inspired by the design you shared: split background,
+                angled center line, strong typography, and a clear call to action.
+            </p>
+        </article>
+        <article id="skills">
+            <p class="section-label">Skills</p>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>Responsive web design</li>
+                <li>Landing pages</li>
+                <li>Portfolio UI styling</li>
+                <li>HTML / CSS customization</li>
             </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate developer specializing in web applications. I love creating user-friendly and functional designs.</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <article>
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
         </article>
-        <article>
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+        <article id="portfolio">
+            <p class="section-label">Portfolio</p>
+            <p>
+                Ready to showcase projects, client work, or a personal brand in a sleek,
+                black-and-white hero design.
+            </p>
         </article>
-        <article>
-            <h3>Project 3</h3>
-            <p>Description of project 3.</p>
+        <article id="contact">
+            <p class="section-label">Contact</p>
+            <a class="contact-inline" href="mailto:hello@honey14.dev">hello@honey14.dev</a>
         </article>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2026 Honey14-official. All rights reserved.</p>
-    </footer>
 </body>
 </html>
