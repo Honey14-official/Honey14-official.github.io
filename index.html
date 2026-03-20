@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate developer specializing in web applications. I love creating user-friendly and functional designs.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomasz Gajda Inspired Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero-layout">
+      <section class="intro-panel">
+        <div class="brand-mark" aria-label="brand logo">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="intro-copy">
+          <p class="eyebrow">Hi, I am</p>
+          <h1>Tomasz Gajda</h1>
+          <p class="role">Front-end Developer / UI Designer</p>
+
+          <div class="social-links" aria-label="social links">
+            <a href="mailto:tomasz@example.com" aria-label="Email Tomasz">@</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub profile">GH</a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">in</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-panel">
+        <header class="top-nav">
+          <nav>
+            <a href="#about">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+          </nav>
+          <a class="contact-button" href="#contact">Contact Me</a>
+        </header>
+
+        <div class="portrait-wrap">
+          <div class="portrait-shadow"></div>
+          <div class="portrait-figure" aria-hidden="true">
+            <div class="hair"></div>
+            <div class="face"></div>
+            <div class="ear"></div>
+            <div class="neck"></div>
+            <div class="shirt shirt-left"></div>
+            <div class="shirt shirt-right"></div>
+            <div class="collar collar-left"></div>
+            <div class="collar collar-right"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="content-strip" id="about">
+      <div>
+        <h2>About this concept</h2>
+        <p>
+          This landing page recreates the split-screen portfolio style from the
+          reference with a bold diagonal divider, high-contrast typography, and
+          a minimal personal-brand presentation.
+        </p>
+      </div>
+      <div id="skills">
+        <h2>Core skills</h2>
+        <p>UI design, responsive websites, motion-ready layouts, and polished front-end experiences.</p>
+      </div>
+      <div id="portfolio">
+        <h2>Portfolio focus</h2>
+        <p>Hero sections, visual identity systems, and premium landing pages for personal brands and creators.</p>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>Use the navigation button or social icons above to start a conversation.</p>
+      </div>
     </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <article>
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </article>
-        <article>
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </article>
-        <article>
-            <h3>Project 3</h3>
-            <p>Description of project 3.</p>
-        </article>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2026 Honey14-official. All rights reserved.</p>
-    </footer>
-</body>
+  </body>
 </html>
